@@ -63,11 +63,21 @@ export const Body = ({ setWpm, setAccuracy }) => {
         />
         <p className="w-full text-right">
           Press
-          {CommonUtils.getOperatingSystem() === "macOS"
-            ? " Command + R "
-            : " Ctrl + R "}
+          <span className="font-bold">
+            {CommonUtils.getOperatingSystem() === "macOS"
+              ? " Command + R "
+              : " Ctrl + R "}
+          </span>
           to reset
         </p>
+      </div>
+      <div className="w-full fixed bottom-0 px-20 py-5">
+        <a
+          href="https://sunnyk.vercel.app/"
+          className="text-blue-800 font-bold"
+        >
+          &copy; Sunny Kumar
+        </a>
       </div>
     </section>
   );

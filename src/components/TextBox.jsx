@@ -4,6 +4,7 @@ export const TextBox = ({ handleInput, disabled }) => {
       <textarea
         onPaste={(e) => {
           e.preventDefault();
+          alert("HEY HEY no cheating!")
         }}
         name="user-input"
         id="01"
